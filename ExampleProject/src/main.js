@@ -7,6 +7,8 @@
 // Components
 import App from './App.vue'
 
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
 // Composables
 import { createApp } from 'vue'
 
