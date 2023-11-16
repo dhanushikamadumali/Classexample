@@ -9,6 +9,9 @@ import App from './App.vue'
 
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
+
+// style
+import '@/assets/scss/examplescss.scss';
 // Composables
 import { createApp } from 'vue'
 
