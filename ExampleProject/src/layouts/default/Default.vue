@@ -1,12 +1,24 @@
 <template>
-  <v-app>
-    <default-bar />
-
-    <default-view />
-  </v-app>
+ <v-app>
+<HedearComponent/>
+<br>
+<router-view/>
+<br>
+<FooterComponent/>
+</v-app>
 </template>
 
-<script setup>
-  import DefaultBar from './AppBar.vue'
-  import DefaultView from './View.vue'
+<script>
+  import HedearComponent from '@/components/HedearComponent.vue';
+  import FooterComponent from '@/components/FooterComponent.vue';
+
+
+  export default{
+      components: {
+
+      HedearComponent,
+      FooterComponent
+  },
+  };
+
 </script>

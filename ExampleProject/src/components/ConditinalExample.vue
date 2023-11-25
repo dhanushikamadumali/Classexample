@@ -36,11 +36,11 @@ export default {
   },
 
   // function call karanna one methods athulee
-  methods(){
+  methods:{
     functionarray(){
         // implementaion
       }
-  }
+  },
 
 
 }
