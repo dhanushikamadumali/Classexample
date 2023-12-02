@@ -8,7 +8,7 @@
                 <v-row>
                     <v-col lg="6" cols="12" sm="6" md="6">
                         <lable class="header_color">first name</lable>
-                        <v-text-field class="pt-2"  variant="outlined" v-model="FormData.firstname">
+                        <v-text-field class="pt-2"  variant="outlined" >
 
                         </v-text-field>
                         <!-- {{ Formdata }} -->
@@ -17,7 +17,7 @@
                     </v-col>
                     <v-col lg="6"  cols="12" sm="6" md="6">
                         <lable class="header_color">last name</lable>
-                        <v-text-field class="pt-2" v-model="FormData.lastname"  variant="outlined"></v-text-field>
+                        <v-text-field class="pt-2"   variant="outlined" ></v-text-field>
                     </v-col>
                 </v-row>
                 <!-- <v-row>
@@ -65,6 +65,7 @@ export default{
 
     };
   },
+
   methods:{
     // getData(){
       //form object ekata adalawa console.log wenawa
@@ -78,7 +79,9 @@ export default{
       // console.log(this.address2)
 
     // },
-
+getData(){
+  this.$emit("formData",this.FormData)
+}
 
   },
 
@@ -114,7 +117,7 @@ export default{
 
 
   updated(){
-    this.form.firstname="dharshan";
+    // this.form.firstname="dharshan";
   }
 
 }

@@ -16,26 +16,20 @@
                 <p class="ma-2 pa-2">one of three column</p>
             </v-col>
 
-            <v-img
-            :width="300"
-            aspect-ratio="16/9"
-            cover
-            src="../assets/image/material.jpg">
-
-            </v-img>
+            
             </v-row>
         </v-container>
-       
+
        <page2/>
     </div>
 </template>
 <script>
 // import { defineComponent } from '@vue/composition-api'
-import page2 from "@/views/Page2.vue";
+// import page2 from "@/views/Page2.vue";
 
 export default{
     components:{
-        page2,
+
     },
 };
 
